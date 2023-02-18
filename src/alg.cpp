@@ -5,31 +5,18 @@
 
 bool checkPrime(uint64_t value) {
 // вставьте код функции
-  uint64_t a = 0;
-  int flag = 0;
   if (value <= 1)
   {
     return false;
   }
-  if (value > 1)
+  for (uint64_t i = 2; i < value; i++)
   {
-    for (uint64_t i = 2; i < value; i++)
-    {
-      a = i;
-      if (value % a == 0)
-      {
-        flag = 1;
-      }
-    }
-    if (flag == 1)
+    if (value % i == 0)
     {
       return false;
     }
-    else
-    {
-      return true;
-    }
   }
+  return true;
 }
 
 
