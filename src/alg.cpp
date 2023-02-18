@@ -66,13 +66,20 @@ uint64_t nextPrime(uint64_t value) {
 
 uint64_t sumPrime(uint64_t hbound) {
 // вставьте код функции
-  uint64_t sum = 0;
-  for (uint64_t i = 0; i < hbound; i++)
+  if (hbound > 1)
   {
-    if (checkPrime(i) == true)
+    uint64_t sum = 0;
+    for (uint64_t i = 0; i < hbound; i++)
     {
-      sum += i;
+      if (checkPrime(i) == true)
+      {
+        sum += i;
+      }
     }
+    return sum;
   }
-  return sum;
+  else
+  {
+    return 0;
+  }
 }
