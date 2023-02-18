@@ -4,6 +4,7 @@
 
 
 bool checkPrime(uint64_t value) {
+// вставьте код функции
   unsigned long long a = 0;
   int flag = 0;
   if (value <= 1)
@@ -33,6 +34,7 @@ bool checkPrime(uint64_t value) {
 
 
 uint64_t nPrime(uint64_t n) {
+// вставьте код функции
   if (n >=1)
   {
     unsigned long long result = 0;
@@ -54,6 +56,7 @@ uint64_t nPrime(uint64_t n) {
 }
 
 uint64_t nextPrime(uint64_t value) {
+// вставьте код функции
   do
   {
     ++value;
@@ -62,6 +65,7 @@ uint64_t nextPrime(uint64_t value) {
 }
 
 uint64_t sumPrime(uint64_t hbound) {
+// вставьте код функции
   unsigned long long sum = 0;
   for (unsigned long long i = 0; i < hbound; i++)
   {
