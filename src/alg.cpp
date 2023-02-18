@@ -35,9 +35,7 @@ uint64_t nPrime(uint64_t n) {
       }
     }
     return result;
-  }
-  else
-  {
+  } else {
     return 0;
   }
 }
